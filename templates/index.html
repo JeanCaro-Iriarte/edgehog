@@ -6,16 +6,17 @@
   <div class="hero-overlay"></div>
   <img class="hero-bg" src="images/hero.jpg" alt="" aria-hidden="true" />
   <div class="container hero-content">
-    <p class="hero-tag">Rope Access &amp; Height Safety Specialists</p>
-    <h1>Safety <span class="text-accent">Above</span> All</h1>
-    <p class="hero-sub">Melbourne's trusted partner for building maintenance, installation and training at height.</p>
+    <p class="hero-tag">{{ section.extra.hero_tag }}</p>
+    <h1>{{ section.extra.hero_title | safe }}</h1>
+    <p class="hero-sub">{{ section.extra.hero_sub }}</p>
     <div class="hero-ctas">
-      <a href="#contact" class="btn btn-primary">Get a Quote</a>
-      <a href="#services" class="btn btn-outline">Our Services</a>
+      <a href="#contact" class="btn btn-primary">{{ section.extra.hero_cta_primary }}</a>
+      <a href="#services" class="btn btn-outline">{{ section.extra.hero_cta_secondary }}</a>
     </div>
     <div class="hero-badges">
-      <span class="badge">Kattsafe Accredited</span>
-      <span class="badge">20+ Years Experience</span>
+      {% for badge in section.extra.hero_badges %}
+      <span class="badge">{{ badge }}</span>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -24,23 +25,17 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-text">
-        <p class="section-label">About Us</p>
-        <h2>Two Decades of Experience at Your Service</h2>
-        <p>Edgehog was born from nearly twenty years of experience in the rope access and height safety sector, spanning both commercial and industrial applications. Highly versed in both areas, we draw on a vast network of certified knowledge and expertise to get the job done efficiently and with the highest safety standards.</p>
-        <p>We are <strong>accredited by Kattsafe</strong> for the installation of height safety systems. Based in Melbourne, Victoria, Australia, we serve the entire region.</p>
+        <p class="section-label">{{ section.extra.about_label }}</p>
+        <h2>{{ section.extra.about_title }}</h2>
+        <p>{{ section.extra.about_paragraphs[0] }}</p>
+        <p>{{ section.extra.about_paragraphs[1] | safe }}</p>
         <div class="about-stats">
+          {% for stat in section.extra.stats %}
           <div class="stat">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">Years Experience</span>
+            <span class="stat-number">{{ stat.number }}</span>
+            <span class="stat-label">{{ stat.label }}</span>
           </div>
-          <div class="stat">
-            <span class="stat-number">500+</span>
-            <span class="stat-label">Projects Completed</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Safety Commitment</span>
-          </div>
+          {% endfor %}
         </div>
       </div>
       <div class="about-image">
@@ -52,62 +47,35 @@
 
 <section id="services" class="section section-dark">
   <div class="container">
-    <p class="section-label">Services</p>
-    <h2 class="section-title">Comprehensive Height Safety Solutions</h2>
-    <p class="section-sub">From facade maintenance to anchor system installation and specialised training — we cover every aspect of working at height.</p>
+    <p class="section-label">{{ section.extra.services_label }}</p>
+    <h2 class="section-title">{{ section.extra.services_title }}</h2>
+    <p class="section-sub">{{ section.extra.services_sub }}</p>
     <div class="services-grid">
-
+      {% set service_icons = [
+        '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A838" stroke-width="1.5"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>',
+        '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A838" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>',
+        '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A838" stroke-width="1.5"><path d="M12 6v12M8 10l4-4 4 4M8 14l4 4 4-4"/></svg>'
+      ] %}
+      {% for service in section.extra.services %}
       <div class="service-card">
-        <div class="service-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A838" stroke-width="1.5"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
-        </div>
-        <h3>Building Maintenance</h3>
+        <div class="service-icon">{{ service_icons[loop.index0] | safe }}</div>
+        <h3>{{ service.title }}</h3>
         <ul>
-          <li>Inspections &amp; reporting</li>
-          <li>Leak detection &amp; rectification</li>
-          <li>Caulking &amp; sealing</li>
-          <li>High-rise painting</li>
-          <li>Concrete repairs</li>
-          <li>Window cleaning</li>
+          {% for item in service.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
         </ul>
       </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A838" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>Installation</h3>
-        <ul>
-          <li>Fall arrest / work at height systems</li>
-          <li>Anchor installation &amp; re-certification</li>
-          <li>Glazing</li>
-          <li>Facade installation &amp; replacement</li>
-          <li>Signage at height</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A838" stroke-width="1.5"><path d="M12 6v12M8 10l4-4 4 4M8 14l4 4 4-4"/></svg>
-        </div>
-        <h3>Training</h3>
-        <ul>
-          <li>Access system &amp; rescue planning</li>
-          <li>Verification of Competency</li>
-          <li>Re-validation training</li>
-          <li>Height safety consulting</li>
-        </ul>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
 </section>
 
 <section id="projects" class="section">
   <div class="container">
-    <p class="section-label">Projects</p>
-    <h2 class="section-title">Recent Work</h2>
-    <p class="section-sub">Over 500 projects completed across Melbourne and Victoria.</p>
+    <p class="section-label">{{ section.extra.projects_label }}</p>
+    <h2 class="section-title">{{ section.extra.projects_title }}</h2>
+    <p class="section-sub">{{ section.extra.projects_sub }}</p>
     <div class="projects-grid">
       <div class="project-item"><img src="images/project-1.jpg" alt="Project 1" loading="lazy" /></div>
       <div class="project-item"><img src="images/project-2.jpg" alt="Project 2" loading="lazy" /></div>
@@ -119,33 +87,19 @@
 
 <section id="testimonials" class="section section-dark">
   <div class="container">
-    <p class="section-label">Testimonials</p>
-    <h2 class="section-title">What Our Clients Say</h2>
+    <p class="section-label">{{ section.extra.testimonials_label }}</p>
+    <h2 class="section-title">{{ section.extra.testimonials_title }}</h2>
     <div class="testimonials-grid">
+      {% for t in section.extra.testimonials %}
       <div class="testimonial-card">
         <div class="stars">★★★★★</div>
-        <p>"Edgehog demonstrated exceptional professionalism installing our height safety systems. The team was punctual, efficient, and the quality of work was impeccable."</p>
+        <p>"{{ t.quote }}"</p>
         <div class="testimonial-author">
-          <strong>James Mitchell</strong>
-          <span>Project Manager, BuildCorp</span>
+          <strong>{{ t.author }}</strong>
+          <span>{{ t.role }}</span>
         </div>
       </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>"We've worked with Edgehog for years on facade maintenance. Their technical knowledge and focus on safety gives us complete peace of mind."</p>
-        <div class="testimonial-author">
-          <strong>Sarah Thompson</strong>
-          <span>Facilities Manager, GPT Group</span>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>"The rescue planning training they delivered was top-tier. You can feel the nearly 20 years of industry experience. Highly recommended."</p>
-        <div class="testimonial-author">
-          <strong>David Chen</strong>
-          <span>Safety Officer, Multiplex</span>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -154,25 +108,25 @@
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info">
-        <p class="section-label">Contact</p>
-        <h2>Let's Talk About Your Project</h2>
-        <p>Ready to get started? Request a free quote or give us a call directly.</p>
+        <p class="section-label">{{ section.extra.contact_label }}</p>
+        <h2>{{ section.extra.contact_title }}</h2>
+        <p>{{ section.extra.contact_sub }}</p>
         <div class="contact-details">
           <div class="contact-row">
             <span class="contact-label">Phone</span>
-            <a href="tel:0494382234">0494 382 234</a>
+            <a href="tel:{{ section.extra.contact_phone | replace(from=' ', to='') }}">{{ section.extra.contact_phone }}</a>
           </div>
           <div class="contact-row">
             <span class="contact-label">Email</span>
-            <a href="mailto:info@edgehog.org">info@edgehog.org</a>
+            <a href="mailto:{{ section.extra.contact_email }}">{{ section.extra.contact_email }}</a>
           </div>
           <div class="contact-row">
             <span class="contact-label">Location</span>
-            <span>Melbourne, Victoria, Australia</span>
+            <span>{{ section.extra.contact_location }}</span>
           </div>
           <div class="contact-row">
             <span class="contact-label">ABN</span>
-            <span>96 346 454 563</span>
+            <span>{{ section.extra.contact_abn }}</span>
           </div>
         </div>
       </div>

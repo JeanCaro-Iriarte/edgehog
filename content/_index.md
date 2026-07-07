@@ -27,7 +27,7 @@ services_sub = "From facade maintenance to anchor system installation and specia
 # ── Projects ──
 projects_label = "Projects"
 projects_title = "Recent Work"
-projects_sub = "Over 500 projects completed across Melbourne and Victoria."
+projects_sub = "Over 200 projects completed across Melbourne and Victoria."
 
 # ── Testimonials ──
 testimonials_label = "Testimonials"
@@ -39,7 +39,7 @@ contact_title = "Let's Talk About Your Project"
 contact_sub = "Ready to get started? Request a free quote or give us a call directly."
 contact_phone = "0494 382 234"
 contact_email = "info@edgehog.org"
-contact_location = "Melbourne, Victoria, Australia"
+contact_location = "Melbourne, Australia"
 contact_abn = "96 346 454 563"
 
 # ── Stats (array of tables) ──
@@ -48,7 +48,7 @@ number = "20+"
 label = "Years Experience"
 
 [[extra.stats]]
-number = "500+"
+number = "200+"
 label = "Projects Completed"
 
 [[extra.stats]]

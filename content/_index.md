@@ -22,7 +22,7 @@ about_paragraphs = [
 # ── Services ──
 services_label = "Services"
 services_title = "Comprehensive Height Safety Solutions"
-services_sub = "From facade maintenance to anchor system installation and specialised training — we cover every aspect of working at height."
+services_sub = "From facade maintenance to anchor system installation and specialised training we cover every aspect of working at height."
 
 # ── Projects ──
 projects_label = "Projects"

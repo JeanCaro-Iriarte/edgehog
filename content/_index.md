@@ -9,25 +9,25 @@ hero_title = "Safety <span class=\"text-accent\">Above</span> All"
 hero_sub = "Melbourne's trusted partner for building maintenance, installation and training at height."
 hero_cta_primary = "Get a Quote"
 hero_cta_secondary = "Our Services"
-hero_badges = ["Kattsafe Accredited", "20+ Years Experience"]
+hero_badges = ["Kattsafe Accredited", "15+ Years Experience"]
 
 # ── About ──
 about_label = "About Us"
 about_title = "Two Decades of Experience at Your Service"
 about_paragraphs = [
-  "Edgehog was born from nearly twenty years of experience in the rope access and height safety sector, spanning both commercial and industrial applications. Highly versed in both areas, we draw on a vast network of certified knowledge and expertise to get the job done efficiently and with the highest safety standards.",
+  "Edgehog is the product of over fifteen years of experience, across a multitude of industries in the rope access / height safety sector. Highly versed in both commercial and industrial applications of the trade, we are able to draw on a vast network of certified knowledge and experience to get the job done efficiently, in the safest possible manner.",
   "We are <strong>accredited by Kattsafe</strong> for the installation of height safety systems. Based in Melbourne, Victoria, Australia, we serve the entire region."
 ]
 
 # ── Services ──
 services_label = "Services"
 services_title = "Comprehensive Height Safety Solutions"
-services_sub = "From facade maintenance to anchor system installation and specialised training we cover every aspect of working at height."
+services_sub = "From facade maintenance to anchor system installation & led by a qualified IRATA instructor, we cover every aspect of working at height."
 
 # ── Projects ──
 projects_label = "Projects"
 projects_title = "Recent Work"
-projects_sub = "Over 200 projects completed across Melbourne and Victoria."
+projects_sub = "Over 200 projects completed across Victoria."
 
 # ── Testimonials ──
 testimonials_label = "Testimonials"

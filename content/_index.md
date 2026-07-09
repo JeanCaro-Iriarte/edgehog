@@ -44,7 +44,7 @@ contact_abn = "96 346 454 563"
 
 # ── Stats (array of tables) ──
 [[extra.stats]]
-number = "20+"
+number = "15+"
 label = "Years Experience"
 
 [[extra.stats]]

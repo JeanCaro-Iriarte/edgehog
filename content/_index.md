@@ -13,9 +13,9 @@ hero_badges = ["Kattsafe Accredited", "15+ Years Experience"]
 
 # ── About ──
 about_label = "About Us"
-about_title = "Two Decades of Experience at Your Service"
+about_title = "Over Fifteen Years of Experience at Your Service"
 about_paragraphs = [
-  "Edgehog is the product of over fifteen years of experience, across a multitude of industries in the rope access / height safety sector. Highly versed in both commercial and industrial applications of the trade, we are able to draw on a vast network of certified knowledge and experience to get the job done efficiently, in the safest possible manner.",
+  "Edgehog is the product of over fifteen years experience, across a multitude of industries in the rope access / height safety sector. Highly versed in both commercial and industrial applications of the trade, we are able to draw on a vast network of certified knowledge and experience to get the job done efficiently, in the safest possible manner.",
   "We are <strong>accredited by Kattsafe</strong> for the installation of height safety systems. Based in Melbourne, Victoria, Australia, we serve the entire region."
 ]
 

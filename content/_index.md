@@ -26,7 +26,7 @@ services_sub = "From facade maintenance to anchor system installation & certific
 
 # ── Projects ──
 projects_label = "Projects"
-projects_title = "Recent Work"
+projects_title = "Completed Work"
 projects_sub = "Over 200 projects completed across Victoria."
 
 # ── Testimonials ──

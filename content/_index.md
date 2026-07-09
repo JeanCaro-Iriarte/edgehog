@@ -62,11 +62,11 @@ items = ["Inspections & reporting", "Leak detection & rectification", "Caulking 
 
 [[extra.services]]
 title = "Installation"
-items = ["Fall arrest / work at height systems", "Glazing", "Facade installation & replacement", "Signage at height"]
+items = [ "Anchor installation", "Fall arrest / work at height systems", "Glazing", "Facade installation & replacement", "Signage at height"]
 
 [[extra.services]]
 title = "Certification"
-items = ["Anchor installation & re-certification", "Access system & rescue planning", "Verification of Competency", "Re-validation training", "Height safety consulting"]
+items = ["Anchor re-certification", "Access system & rescue planning", "Verification of Competency", "Re-validation training", "Height safety consulting"]
 
 # ── Testimonials (array of tables) ──
 [[extra.testimonials]]

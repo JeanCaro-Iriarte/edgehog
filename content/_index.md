@@ -70,9 +70,9 @@ items = ["Anchor re-certification", "Access system & rescue planning", "Verifica
 
 # ── Testimonials (array of tables) ──
 [[extra.testimonials]]
-quote = "Edgehog demonstrated exceptional professionalism installing our height safety systems. The team was punctual, efficient, and the quality of work was impeccable."
-author = "James Mitchell"
-role = "Project Manager, BuildCorp"
+quote = "Excellent service from start to finish. They did a fantastic job cleaning our plenum, was punctual, professional, and very thorough. The quality of their work was great, and he left everything clean and tidy afterwards. Great communication throughout the process and a pleasure to deal with. Highly recommend his services... five stars!"
+author = "Chris McCoughtry"
+role = "Flight Team Manager, iFly"
 
 [[extra.testimonials]]
 quote = "We've worked with Edgehog for years on facade maintenance. Their technical knowledge and focus on safety gives us complete peace of mind."

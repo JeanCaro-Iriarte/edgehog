@@ -70,7 +70,7 @@ items = ["Anchor re-certification", "Access system & rescue planning", "Verifica
 
 # ── Testimonials (array of tables) ──
 [[extra.testimonials]]
-quote = "Excellent service from start to finish. They were punctual, professional, and very thorough. The quality of their work was great, and he left everything clean and tidy afterwards. Great communication throughout the process and a pleasure to deal with. Highly recommend their services... five stars!"
+quote = "Excellent service from start to finish. They were punctual, professional, and very thorough. The quality of their work was great, and they left everything clean and tidy afterwards. Great communication throughout the process and a pleasure to deal with. Highly recommend their services... five stars!"
 author = "Chris McCoughtry"
 role = "Flight Team Manager, iFly"
 

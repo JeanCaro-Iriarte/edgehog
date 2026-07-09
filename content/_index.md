@@ -6,7 +6,7 @@ template = "index.html"
 # ── Hero ──
 hero_tag = "Rope Access & Height Safety Specialists"
 hero_title = "Safety <span class=\"text-accent\">Above</span> All"
-hero_sub = "Melbourne's trusted partner for building maintenance, installation and training at height."
+hero_sub = "Melbourne's trusted partner for building maintenance, installation and certification at height."
 hero_cta_primary = "Get a Quote"
 hero_cta_secondary = "Our Services"
 hero_badges = ["Kattsafe Accredited", "15+ Years Experience"]
@@ -22,7 +22,7 @@ about_paragraphs = [
 # ── Services ──
 services_label = "Services"
 services_title = "Comprehensive Height Safety Solutions"
-services_sub = "From facade maintenance to anchor system installation & led by a qualified IRATA instructor, we cover every aspect of working at height."
+services_sub = "From facade maintenance to anchor system installation & certification, we cover every aspect of working at height."
 
 # ── Projects ──
 projects_label = "Projects"
@@ -65,7 +65,7 @@ title = "Installation"
 items = ["Fall arrest / work at height systems", "Anchor installation & re-certification", "Glazing", "Facade installation & replacement", "Signage at height"]
 
 [[extra.services]]
-title = "Training"
+title = "Certification"
 items = ["Access system & rescue planning", "Verification of Competency", "Re-validation training", "Height safety consulting"]
 
 # ── Testimonials (array of tables) ──

@@ -62,7 +62,7 @@ items = ["Inspections & reporting", "Leak detection & rectification", "Caulking 
 
 [[extra.services]]
 title = "Installation"
-items = [ "Anchor installation", "Fall arrest / work at height systems", "Glazing", "Facade installation & replacement", "Signage at height"]
+items = [ "Fall arrest / work at height systems", "Anchor installation", "Glazing", "Facade installation & replacement", "Signage at height"]
 
 [[extra.services]]
 title = "Certification"

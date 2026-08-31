@@ -64,7 +64,7 @@ h1, h2, h3 { font-family: 'Orbitron', sans-serif; line-height: 1.2; letter-spaci
   height: 72px;
 }
 .logo { display: flex; align-items: center; }
-.logo-img { height: 40px; width: auto; display: block; }
+.logo-img { height: 75px; width: auto; display: block; }
 .nav-links { display: flex; gap: 32px; }
 .nav-links a {
   font-size: 0.85rem;

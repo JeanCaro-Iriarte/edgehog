@@ -1,8 +1,0 @@
-base_url = "/"
-title = "EDGEHOG — Height Safety & Rope Access Specialists"
-description = "Rope access, height safety, building maintenance and installation services in Melbourne. Kattsafe accredited."
-default_language = "en"
-
-[extra]
-email = "info@edgehog.org"
-author = "Edgehog"
